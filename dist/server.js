@@ -15,7 +15,7 @@ const port = process.env.PORT;
 app.use('/', home_routes_1.HomeRouter);
 app.use(express.static('public'));
 app.use(body_parser_1.default.json());
-(0, connect_1.connect)();
+//(0, connect_1.connect)();
 app.listen(port, () => {
     console.log(colors.underline.green(`App is listening on port:${port}`));
 });
